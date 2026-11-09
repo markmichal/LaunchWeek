@@ -10,7 +10,5 @@ One-page website for Cru High School Launch Weeks (spring break mission trips to
 - Follow Cru branding: sentence case for display text (the small kicker label stays uppercase), commas instead of em dashes.
 
 ## At the end of every work session
-1. Write new decisions into NOTES.md (with the date).
-2. Save a copy of the chat: `python3 ~/Projects/project-kit/save-chat.py ~/Projects/LaunchWeek` (`chats/` is in .gitignore, so it stays on this Mac).
-3. Make a save point: `git add -A && git commit -m "<what changed and why>"`. Don't push unless Mark says so.
-4. Back up: `~/Projects/project-kit/backup-projects.sh ~/Projects/LaunchWeek` (copies only what the save point tracks).
+Follow the routine in ~/AI Projects/AGENTS.md (one place for every project). For this project:
+- Write new decisions into NOTES.md (with the date).
