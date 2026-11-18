@@ -15,6 +15,7 @@ It started as a phone-first web version of the Launch Weeks spring break flyer.
 
 ## Files
 - `index.html`: the page.
+- `media/launch-week.mp4` and `media/launch-week-poster.jpg`: the Launch Week 2026 video and its cover image.
 - `develop yourself.png`, `experience ministry.png`, `make a difference.png`: the three real Cru icons.
 - `Cru_Brandmark_..._White_[RGB] (2).svg`: the official white Cru logo.
 - `CNAME`: tells GitHub Pages the address is launchweek.crutastic.com.
@@ -26,6 +27,7 @@ It started as a phone-first web version of the Launch Weeks spring break flyer.
 - 2026-07-13: Real Cru icon files and the official white Cru SVG logo replaced the stand-ins. Mark chose the "bigger visual impact" look: full-width hero with the headline over the photo, scroll reveals, subtle motion.
 - 2026-07-13: Display text in sentence case per Cru branding (kicker stays uppercase). Intro split into three short paragraphs, em dashes replaced with commas. Registration opens Sept 1, 2026.
 - 2026-08-12: Orlando dates set to March 21 to 26.
+- 2026-11-18: Kirk Freeman asked for the Launch Week 2026 video (the same one on campus.cru.org/high-school/launchweek). Added a dark "See it for yourself" video section right under the hero, with a big play button, a beach group shot as the cover, and a stats row (57 decisions for Christ, 3 cities, $0). The hero got "Watch the video" and "Choose your trip" buttons. The video was shrunk from 275 MB to 25 MB (720p) and lives in `media/`; it only downloads when someone presses play. `.gitignore` has an exception so this one video can be saved. Built on branch `add-kirk-video`.
 
 ## Ideas for later
 None written down yet.
@@ -33,4 +35,5 @@ None written down yet.
 ## History
 - 2026-07-13: Built and published (first inside cru-hs-60th, then moved here the same day). Real icons, logo and new hero added.
 - 2026-08-12: Orlando dates updated.
+- 2026-11-18: Launch Week 2026 video added with a new video section.
 - 2026-11-09: Project kit added (AGENTS.md, NOTES.md, save points, backup to Drive).

@@ -17,3 +17,6 @@ build/
 downloads/
 chats/
 .DS_Store
+
+# Exception (2026-11-18): the public Launch Week video the site plays (already public on campus.cru.org)
+!media/launch-week.mp4
