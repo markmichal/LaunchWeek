@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Launch Weeks flyer</title>
+<style>
+@font-face{font-family:'Inter';font-weight:400 700;src:url(assets/a00.woff2) format('woff2')}
+@font-face{font-family:'Sora';font-weight:300 800;src:url(assets/a04.woff2) format('woff2')}
+@page{size:11in 8.5in;margin:0}
+:root{--yellow:#FFD000;--pink:#EA657F;--pink-text:#C2405E;--teal:#00C0D8;--ink:#111;--body:#2b2b2b;--muted:#444}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:'Inter',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.sheet{width:11in;height:8.5in;display:flex;position:relative;overflow:hidden}
+.sheet::after{content:"";position:absolute;left:50%;top:.12in;bottom:.12in;border-left:1px dashed #bbb}
+.half{width:5.5in;height:8.5in;padding:.3in}
+.flyer{height:100%;display:flex;flex-direction:column;justify-content:space-between}
+
+/* Hero */
+.hero{position:relative}
+.photo{height:1.8in;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.box{position:relative;margin:-.55in 1.0in 0 0;padding:0 .1in .1in 0}
+.box::before{content:"";position:absolute;left:.45in;right:0;top:.45in;bottom:0;background:var(--teal)}
+.card{position:relative;background:var(--yellow);padding:.16in .22in .17in}
+.tag{display:inline-block;background:var(--pink);color:#000;font-family:'Sora';font-weight:700;font-size:8.5pt;padding:2pt 7pt;transform:rotate(-6deg);margin-bottom:5pt}
+h1{font-family:'Sora';margin:0;line-height:1.02;letter-spacing:-.01em}
+h1 b{display:block;font-weight:800;font-size:26pt}
+h1 span{display:block;font-weight:300;font-size:22pt}
+.card p{margin:6pt 0 0;font-size:8.2pt;line-height:1.38}
+.card p strong{font-weight:700}
+
+/* Section labels */
+.kicker{font-family:'Sora';font-weight:400;font-size:6.6pt;letter-spacing:.14em;color:var(--pink-text);text-transform:uppercase;margin:0 0 2pt}
+h2{font-family:'Sora';font-weight:800;font-size:13.5pt;line-height:1.1;margin:0;letter-spacing:-.01em}
+
+/* Trips */
+.trips .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.16in;margin-top:7pt}
+.ph{display:block;position:relative;padding:0 5pt 5pt 0}
+.ph::before{content:"";position:absolute;left:16pt;right:0;top:16pt;bottom:0;background:var(--c)}
+.ph img{position:relative;width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.city{display:block;margin-top:5pt;font-family:'Sora';font-weight:800;font-size:10.5pt;line-height:1.1}
+.lw{display:block;font-family:'Sora';font-weight:300;font-size:9pt;line-height:1.2}
+.date{display:block;margin-top:2pt;color:var(--muted);font-size:7.8pt;font-weight:600}
+
+/* Experience */
+.exp .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.16in;margin-top:7pt}
+.hd{display:flex;align-items:center;gap:5pt}
+.ic{width:17pt;height:17pt;background:var(--pink);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ic svg{width:10pt;height:10pt}
+h3{font-family:'Sora';font-weight:700;font-size:8.6pt;line-height:1.1;margin:0}
+.exp ul{margin:4pt 0 0;padding-left:9pt;color:var(--body);font-size:7pt;line-height:1.35}
+.exp li{margin:1.5pt 0}
+.exp li::marker{color:var(--pink)}
+
+/* Cost band */
+.band{background:var(--yellow);display:flex;align-items:center;gap:.16in;padding:.1in .14in .1in .2in}
+.cost{font-family:'Sora';line-height:1;flex:none}
+.cost span{display:block;font-weight:300;font-size:12pt}
+.cost b{display:block;font-weight:800;font-size:25pt}
+.band ul{flex:1;margin:0;padding-left:10pt;font-size:7.6pt;font-weight:500;line-height:1.35}
+.band li{margin:1.5pt 0}
+.qr{flex:none;text-align:center}
+.qr .code{width:.72in;height:.72in;background:#fff;padding:4pt}
+.qr .code img{width:100%;height:100%;display:block}
+.qr small{display:block;font-family:'Sora';font-weight:600;font-size:5.6pt;margin-top:3pt}
+
+/* Footer */
+.foot{background:#000;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:.05in .2in;margin-top:-.0in}
+.foot img{height:.3in;width:auto;display:block}
+.foot span{font-family:'Sora';font-weight:600;font-size:7.4pt;color:var(--yellow)}
+.bottom{display:flex;flex-direction:column}
+</style>
+</head>
+<body>
+<div class="sheet" id="sheet">
+  <div class="half"><div class="flyer" id="flyer">
+    <section class="hero">
+      <div class="photo"><img src="assets/a06.jpg" alt=""></div>
+      <div class="box"><div class="card">
+        <span class="tag">FREE!</span>
+        <h1><b>Spring break</b><span>Launch Weeks</span></h1>
+        <p>Spend your spring break reaching high school students with the hope of Jesus. Teens are the <strong>most responsive age group to the gospel</strong>, and many have never heard it.</p>
+      </div></div>
+    </section>
+
+    <section class="trips">
+      <p class="kicker">Upcoming trips</p>
+      <h2>Where will you make an impact?</h2>
+      <div class="grid">
+        <div><span class="ph" style="--c:var(--yellow)"><img src="assets/a07.jpg" alt=""></span><span class="city">San Diego</span><span class="date">March 14&ndash;19</span></div>
+        <div><span class="ph" style="--c:var(--teal)"><img src="assets/a08.jpg" alt=""></span><span class="city">Tampa</span><span class="date">March 14&ndash;19</span></div>
+        <div><span class="ph" style="--c:var(--pink)"><img src="assets/a09.jpg" alt=""></span><span class="city">Orlando</span><span class="date">March 21&ndash;26</span></div>
+      </div>
+    </section>
+
+    <section class="exp">
+      <p class="kicker">The Launch Week experience</p>
+      <div class="grid">
+        <div>
+          <div class="hd"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Develop yourself</h3></div>
+          <ul><li>Develop leadership skills</li><li>Build deep relationships</li><li>Grow in your faith</li></ul>
+        </div>
+        <div>
+          <div class="hd"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="M8 9h9"/><path d="M8 13h6"/></svg></span><h3>Experience ministry</h3></div>
+          <ul><li>Hands-on evangelism with teens</li><li>Learn to share your story</li></ul>
+        </div>
+        <div>
+          <div class="hd"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></span><h3>Make a difference</h3></div>
+          <ul><li>Help launch new movements on high school campuses</li><li>Help a student connect with Jesus</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="band">
+        <div class="cost"><span>Cost</span><b>Free</b></div>
+        <ul>
+          <li>Just get there and we&rsquo;ll house and feed you</li>
+          <li>Space is limited</li>
+          <li>Registration opens Sept 1, 2026</li>
+        </ul>
+        <div class="qr"><div class="code"><img src="assets/qr.svg" alt=""></div><small>Scan to choose your trip</small></div>
+      </div>
+      <div class="foot"><img src="assets/a10.svg" alt="Cru"><span>launchweek.crutastic.com</span></div>
+    </section>
+  </div></div>
+  <div class="half" id="second"></div>
+</div>
+<script>
+  // second copy is an exact clone of the first
+  document.getElementById('second').innerHTML = document.querySelector('.half').innerHTML;
+</script>
+</body>
+</html>
