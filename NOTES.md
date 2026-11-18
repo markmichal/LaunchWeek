@@ -28,12 +28,14 @@ It started as a phone-first web version of the Launch Weeks spring break flyer.
 - 2026-07-13: Display text in sentence case per Cru branding (kicker stays uppercase). Intro split into three short paragraphs, em dashes replaced with commas. Registration opens Sept 1, 2026.
 - 2026-08-12: Orlando dates set to March 21 to 26.
 - 2026-11-18: Kirk Freeman asked for the Launch Week 2026 video (the same one on campus.cru.org/high-school/launchweek). Added a dark "See it for yourself" video section right under the hero, with a big play button, a beach group shot as the cover, and a stats row (57 decisions for Christ, 3 cities, $0). The hero got "Watch the video" and "Choose your trip" buttons. The video was shrunk from 275 MB to 25 MB (720p) and lives in `media/`; it only downloads when someone presses play. `.gitignore` has an exception so this one video can be saved. Built on branch `add-kirk-video`.
+- 2026-11-18: Mark OK'd a visual refresh to match the Cru High School Launch Week page (campus.cru.org/high-school/launchweek). New look: black header and footer with the white Cru logo; a yellow box with a teal block behind it over the hero photo; pink "FREE!" tag; pink uppercase section labels; square black buttons; colored offset blocks behind the video and trip photos; pink square icons (the three round blue Cru icon PNGs are no longer used on the page but stay in the folder); a yellow "Cost: Free" band. Sora is now one variable font file (weights 300 to 800) so the light "Launch Weeks" type works. The mockup is Mark's private Claude design canvas "Launch Week site refresh". Built on branch `cru-look-refresh`.
 
 ## Ideas for later
-- 2026-11-18: Visual refresh to match the Cru High School Launch Week page (campus.cru.org/high-school/launchweek): yellow box over the hero photo with a teal block behind it, pink "FREE!" tag and section labels, black buttons, colored offset blocks behind photos, black header and footer. Mockup is in Mark's private Claude design canvas "Launch Week site refresh". Waiting on Mark's OK before changing the real site.
+None written down yet.
 
 ## History
 - 2026-07-13: Built and published (first inside cru-hs-60th, then moved here the same day). Real icons, logo and new hero added.
 - 2026-08-12: Orlando dates updated.
 - 2026-11-18: Launch Week 2026 video added with a new video section.
+- 2026-11-18: Visual refresh to match the Cru High School Launch Week page.
 - 2026-11-09: Project kit added (AGENTS.md, NOTES.md, save points, backup to Drive).
