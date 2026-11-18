@@ -30,7 +30,7 @@ It started as a phone-first web version of the Launch Weeks spring break flyer.
 - 2026-11-18: Kirk Freeman asked for the Launch Week 2026 video (the same one on campus.cru.org/high-school/launchweek). Added a dark "See it for yourself" video section right under the hero, with a big play button, a beach group shot as the cover, and a stats row (57 decisions for Christ, 3 cities, $0). The hero got "Watch the video" and "Choose your trip" buttons. The video was shrunk from 275 MB to 25 MB (720p) and lives in `media/`; it only downloads when someone presses play. `.gitignore` has an exception so this one video can be saved. Built on branch `add-kirk-video`.
 
 ## Ideas for later
-None written down yet.
+- 2026-11-18: Visual refresh to match the Cru High School Launch Week page (campus.cru.org/high-school/launchweek): yellow box over the hero photo with a teal block behind it, pink "FREE!" tag and section labels, black buttons, colored offset blocks behind photos, black header and footer. Mockup is in Mark's private Claude design canvas "Launch Week site refresh". Waiting on Mark's OK before changing the real site.
 
 ## History
 - 2026-07-13: Built and published (first inside cru-hs-60th, then moved here the same day). Real icons, logo and new hero added.
